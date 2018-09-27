@@ -9,17 +9,18 @@ github. It includes:
 - Enforced linting with flake8
 - Sphinx documentation framework
 - Integration with readthedocs, Travis, and AppVeyor
-- Automated CI test against multiple versions of Python
+- CI tests against multiple versions of Python (Anaconda distribution)
 - Semi-automated versioning system
-- Step-by-step release to guide to pypi and conda-forge
+- Step-by-step guide to release to pypi and conda-forge
 
 Full documentation at http://python_project_template.readthedocs.io/
 
 Usage
 -----
-1. Copy this project into your project
-2. Search and replace all TEMPLATE tags with your project name
-3. Search for all TODO tags and fix accordingly
+1. Copy all the files into your project
+2. Replace all TEMPLATE tags with your project name
+   (also in file and directory names)
+3. Search for all TODO tags and change them as needed
 4. Integrate with readthedocs, Travis, and AppVeyor and obtain successful builds
 5. Replace the TEMPLATE directory with your own python files and tests.
 
