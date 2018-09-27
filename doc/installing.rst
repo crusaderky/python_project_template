@@ -6,7 +6,7 @@ Installation
 Required dependencies
 ---------------------
 
-# TODO adjust as needed
+TODO add more requirements
 
 - Python 3.5 or later
 
