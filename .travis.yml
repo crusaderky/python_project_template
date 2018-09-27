@@ -40,7 +40,7 @@ install:
 script:
   - python -OO -c "import TEMPLATE"
   - if [[ "$CONDA_ENV" == "docs" ]]; then
-      conda install -c conda-forge sphinx sphinx_rtd_theme numpydoc;
+      conda install -c conda-forge sphinx sphinx_rtd_theme;
       sphinx-build -n -j auto -b html -d _build/doctrees doc _build/html;
     else
       py.test TEMPLATE --cov=TEMPLATE --cov-config ci/.coveragerc --cov-report term-missing --verbose $EXTRA_FLAGS;

@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
     'sphinx.ext.mathjax',
-    'numpydoc',
+    #'numpydoc',
     'IPython.sphinxext.ipython_directive',
     'IPython.sphinxext.ipython_console_highlighting',
 ]
@@ -48,8 +48,9 @@ extlinks = {
 
 autosummary_generate = True
 
-numpydoc_class_members_toctree = True
-numpydoc_show_class_members = False
+# numpydoc settings
+#numpydoc_class_members_toctree = True
+#numpydoc_show_class_members = False
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -293,10 +294,10 @@ texinfo_documents = [
 intersphinx_mapping = {
     # TODO add/remove project dependencies
     'python': ('https://docs.python.org/3/', None),
-    'dask': ('https://dask.pydata.org/en/latest/', None),
-    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
-    'numpy': ('https://docs.scipy.org/doc/numpy/', None),
-    'numba': ('https://numba.pydata.org/numba-doc/latest/', None),
-    'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
-    'xarray': ('https://xarray.pydata.org/en/stable/', None),
+    # 'dask': ('https://dask.pydata.org/en/latest/', None),
+    # 'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
+    # 'numpy': ('https://docs.scipy.org/doc/numpy/', None),
+    # 'numba': ('https://numba.pydata.org/numba-doc/latest/', None),
+    # 'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
+    # 'xarray': ('https://xarray.pydata.org/en/stable/', None),
 }
