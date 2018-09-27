@@ -37,8 +37,8 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.mathjax',
     #'numpydoc',
-    'IPython.sphinxext.ipython_directive',
-    'IPython.sphinxext.ipython_console_highlighting',
+    #'IPython.sphinxext.ipython_directive',
+    #'IPython.sphinxext.ipython_console_highlighting',
 ]
 
 extlinks = {
