@@ -1,0 +1,22 @@
+.. _installing:
+
+Installation
+============
+
+Required dependencies
+---------------------
+
+# TODO adjust as needed
+
+- Python 3.5 or later
+
+Testing
+-------
+
+To run the test suite after installing TEMPLATE, first install (via pypi or conda)
+
+- `py.test <https://pytest.org>`__: Simple unit testing library
+
+and run
+``py.test --pyargs TEMPLATE``.
+

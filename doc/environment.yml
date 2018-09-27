@@ -1,0 +1,10 @@
+name: TEMPLATE-docs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - flake8
+  - sphinx=1.5
+  - sphinx_rtd_theme
+  # TODO: add any dependency needed to import the project modules

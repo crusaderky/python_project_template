@@ -1,0 +1,11 @@
+name: test_env
+channels:
+  - anaconda
+dependencies:
+  - python=3.5
+  - flake8
+  - pytest
+  # TODO: add your own dependencies (no version)
+  - pip:
+    - coveralls
+    - pytest-cov
