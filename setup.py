@@ -14,14 +14,15 @@ QUALIFIER = ''
 
 
 DISTNAME = 'TEMPLATE'
-LICENSE = 'LGPL'
+LICENSE = 'Apache'
 AUTHOR = 'TODO'
 AUTHOR_EMAIL = 'TODO@TODO.com'
 URL = 'https://github.com/TODO/TEMPLATE'
 CLASSIFIERS = [
+    # TODO update choosing from
+    # https://pypi.org/pypi?%3Aaction=list_classifiers
     'Development Status :: 3 - Alpha',
-    'License :: OSI Approved :: GNU Lesser General Public License v3 or later '
-    '(LGPLv3+)',
+    'License :: OSI Approved :: Apache Software License',
     'Operating System :: OS Independent',
     'Intended Audience :: Science/Research',
     'Programming Language :: Python',
