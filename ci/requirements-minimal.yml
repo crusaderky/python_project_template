@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.5
   - flake8
-  - pytest=3.1
+  - pytest=3.6
   # TODO: add your own dependencies =minimum supported version
   - pip:
     - coveralls

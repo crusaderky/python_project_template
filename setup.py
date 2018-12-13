@@ -37,7 +37,7 @@ INSTALL_REQUIRES = [
     # TODO your project dependencies here
     # 'numpy >= 1.13',
 ]
-TESTS_REQUIRE = ['pytest >= 3.1']
+TESTS_REQUIRE = ['pytest >= 3.6']
 
 DESCRIPTION = "TEMPLATE"
 LONG_DESCRIPTION = """
