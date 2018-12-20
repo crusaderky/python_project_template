@@ -3,10 +3,12 @@ channels:
   - conda-forge
 dependencies:
   # python=3.7.1=h5001a0f_0 is broken
-  - python=3.7.1=h0371630_3
+  - python=3.7.1=h0371630_7
   - flake8
   - pytest
+  - coveralls
+  - pytest-cov
   # TODO: add your own dependencies (no version)
-  - pip:
-    - coveralls
-    - pytest-cov
+  # - dep1
+  # - pip:
+  #   - dep2
