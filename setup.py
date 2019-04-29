@@ -34,10 +34,10 @@ CLASSIFIERS = [
     'Topic :: Scientific/Engineering',
 ]
 
-INSTALL_REQUIRES: List[str] = [
+INSTALL_REQUIRES = [
     # TODO your project dependencies here
     # 'numpy >= 1.13',
-]
+]  # type: List[str]
 TESTS_REQUIRE = ['pytest >= 3.6']
 
 DESCRIPTION = "TEMPLATE"
