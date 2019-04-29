@@ -6,6 +6,9 @@ dependencies:
   - pytest
   - coveralls
   - pytest-cov
+  # code linters (running only in the latest version of Python)
+  - flake8
+  - mypy
   # TODO: add your own dependencies (no version)
   # - dep1
   # - pip:
