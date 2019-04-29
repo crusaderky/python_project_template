@@ -131,4 +131,5 @@ setup(name=DISTNAME,
       python_requires='>=3.5',
       url=URL,
       packages=find_packages(),
-      package_data={'TEMPLATE': ['tests/data/*']})
+      package_data={'TEMPLATE': ['py.typed', 'tests/data/*']},
+      zip_safe=False)  # required by mypy
