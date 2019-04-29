@@ -3,6 +3,7 @@ import os
 import re
 import warnings
 from setuptools import find_packages, setup
+from typing import List
 
 
 MAJOR = 0
@@ -36,7 +37,7 @@ CLASSIFIERS = [
 INSTALL_REQUIRES = [
     # TODO your project dependencies here
     # 'numpy >= 1.13',
-]
+]  # type: List[str]
 TESTS_REQUIRE = ['pytest >= 3.6']
 
 DESCRIPTION = "TEMPLATE"
@@ -127,6 +128,7 @@ setup(name=DISTNAME,
       long_description=LONG_DESCRIPTION,
       install_requires=INSTALL_REQUIRES,
       tests_require=TESTS_REQUIRE,
+      python_requires='>=3.5',
       url=URL,
       packages=find_packages(),
       package_data={'TEMPLATE': ['tests/data/*']})

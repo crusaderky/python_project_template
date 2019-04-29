@@ -4,7 +4,7 @@ A module that lets you say Hello world
 """
 
 
-def hello(french=False):
+def hello(french: bool = False) -> str:
     """Say hello world!
 
     :param bool french:
