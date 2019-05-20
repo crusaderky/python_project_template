@@ -46,5 +46,4 @@ script:
     else
       py.test TEMPLATE --cov=TEMPLATE --cov-config ci/.coveragerc --cov-report term-missing --verbose $EXTRA_FLAGS;
     fi
-after_success:
-  - coveralls
+

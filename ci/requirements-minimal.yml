@@ -4,7 +4,6 @@ channels:
 dependencies:
   - python=3.5.0
   - pytest=3.6
-  - coveralls
   - pytest-cov
   # TODO: add your own dependencies =minimum supported version
   # - dep1=1.0

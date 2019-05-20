@@ -4,7 +4,6 @@ channels:
 dependencies:
   - python=3.7
   - pytest
-  - coveralls
   - pytest-cov
   # code linters (running only in the latest version of Python)
   - flake8

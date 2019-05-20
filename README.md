@@ -6,7 +6,7 @@ This project contains all the boilerplate for initialising a new Python project 
 github. It includes:
 
 - Automated tests with py.test
-- Enforced linting with flake8
+- Enforced static code validation with flake8 and mypy
 - Sphinx documentation framework
 - Integration with readthedocs, Travis, and AppVeyor
 - CI tests against multiple versions of Python (Anaconda distribution)
@@ -17,14 +17,14 @@ Full documentation at http://python_project_template.readthedocs.io/
 
 Usage
 -----
-1. Copy all the files into your project
+1. Copy all the files into your project (don't forget the hidden files!)
 2. Replace all TEMPLATE tags with your project name
    (also in file and directory names)
-3. Search for all TODO tags and change them as needed
-4. Integrate with readthedocs, Travis, and AppVeyor and obtain successful builds
+3. Search for all TODO tags and replace them as needed
+4. Integrate with readthedocs, Travis, and AppVeyor and obtain
+   successful builds
 5. Replace the TEMPLATE directory with your own python files and tests.
 
 Credits
 -------
-Most of this was taken from https://github.com/pydata/xarray
- 
+Forked from https://github.com/pydata/xarray
