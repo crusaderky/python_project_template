@@ -103,7 +103,7 @@ else:
 
 
 def write_version_py():
-    contents = 'version = "%s"\nshort_version = "%s\n'
+    contents = 'version = "%s"\nshort_version = "%s"\n'
     filename = os.path.join(os.path.dirname(__file__), "TEMPLATE", "version.py")
     with open(filename, "w") as fh:
         fh.write(contents % (FULLVERSION, VERSION))
