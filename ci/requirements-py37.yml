@@ -1,11 +1,13 @@
 name: test_env
 channels:
   - anaconda
+  - conda-forge
 dependencies:
   - python=3.7
   - pytest
   - pytest-cov
-  # code linters (running only in the latest version of Python)
+  # code linters and static checkers (running only in the latest version of Python)
+  - black
   - flake8
   - mypy
   # TODO: add your own dependencies (no version)

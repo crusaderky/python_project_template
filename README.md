@@ -6,7 +6,7 @@ This project contains all the boilerplate for initialising a new Python project 
 github. It includes:
 
 - Automated tests with py.test
-- Enforced static code validation with flake8 and mypy
+- Enforced static code linting and validation with flake8, black and mypy
 - Sphinx documentation framework
 - Integration with readthedocs, Travis, and AppVeyor
 - CI tests against multiple versions of Python (Anaconda distribution)

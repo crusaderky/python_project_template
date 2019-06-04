@@ -39,6 +39,9 @@ script:
       flake8;
     fi
   - if [[ "$CONVA_ENV" == "py37" ]]; then
+      black --check -t py35 .;
+    fi
+  - if [[ "$CONVA_ENV" == "py37" ]]; then
       mypy .;
     fi
   - if [[ "$CONDA_ENV" == "docs" ]]; then
