@@ -19,17 +19,16 @@ def _import_or_skip(modname, minversion=None):
             Tests decorated with it will only run if the module is available
             and >= minversion
     """
-    reason = 'requires %s' % modname
+    reason = "requires %s" % modname
     if minversion:
-        reason += '>=%s' % minversion
+        reason += ">=%s" % minversion
 
     try:
         mod = importlib.import_module(modname)
         has = True
     except ImportError:
         has = False
-    if (has and minversion
-            and LooseVersion(mod.__version__) < LooseVersion(minversion)):
+    if has and minversion and LooseVersion(mod.__version__) < LooseVersion(minversion):
         has = False
 
     func = pytest.mark.skipif(not has, reason=reason)
@@ -37,4 +36,4 @@ def _import_or_skip(modname, minversion=None):
 
 
 # TODO: optional dependencies here
-has_numpy, requires_numpy = _import_or_skip('numpy')
+has_numpy, requires_numpy = _import_or_skip("numpy")
