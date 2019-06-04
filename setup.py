@@ -102,19 +102,11 @@ else:
     FULLVERSION += QUALIFIER
 
 
-def write_version_py(filename=None):
-    cnt = """\
-version = '%s'
-short_version = '%s'
-"""
-    if not filename:
-        filename = os.path.join(os.path.dirname(__file__), "TEMPLATE", "version.py")
-
-    a = open(filename, "w")
-    try:
-        a.write(cnt % (FULLVERSION, VERSION))
-    finally:
-        a.close()
+def write_version_py():
+    contents = 'version = "%s"\nshort_version = "%s\n'
+    filename = os.path.join(os.path.dirname(__file__), "TEMPLATE", "version.py")
+    with open(filename, "w") as fh:
+        fh.write(contents % (FULLVERSION, VERSION))
 
 
 if write_version:
