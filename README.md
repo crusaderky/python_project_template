@@ -6,14 +6,15 @@ This project contains all the boilerplate for initialising a new Python project 
 github. It includes:
 
 - Automated tests with py.test
-- Enforced static code linting and validation with flake8, black and mypy
+- Enforced static code linting and validation with flake8, black, isort, and mypy
 - Sphinx documentation framework
 - Integration with readthedocs, Travis, and AppVeyor
 - CI tests against multiple versions of Python (Anaconda distribution)
-- Semi-automated versioning system
+- Automated versioning with setuptools-scm
 - Step-by-step guide to release to pypi and conda-forge
 
 Full documentation at http://python_project_template.readthedocs.io/
+
 
 Usage
 -----
@@ -24,6 +25,7 @@ Usage
 4. Integrate with readthedocs, Travis, and AppVeyor and obtain
    successful builds
 5. Replace the TEMPLATE directory with your own python files and tests.
+
 
 Credits
 -------
