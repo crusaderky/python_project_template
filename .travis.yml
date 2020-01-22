@@ -11,10 +11,9 @@ matrix:
   fast_finish: true
   include:
   - env: CONDA_ENV=minimal
-  - env: CONDA_ENV=py35
   - env: CONDA_ENV=py36
   - env: CONDA_ENV=py37
-  - env: CONDA_ENV=conda-forge
+  - env: CONDA_ENV=py38
   - env: CONDA_ENV=docs
   allow_failures:
 
@@ -39,7 +38,7 @@ script:
       flake8;
     fi
   - if [[ "$CONVA_ENV" == "py37" ]]; then
-      black --check -t py35 .;
+      black --check -t py36 .;
     fi
   - if [[ "$CONVA_ENV" == "py37" ]]; then
       mypy .;

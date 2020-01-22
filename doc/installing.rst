@@ -8,7 +8,7 @@ Required dependencies
 
 TODO add more requirements
 
-- Python 3.5 or later
+- Python 3.6 or later
 
 Testing
 -------

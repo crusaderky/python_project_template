@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # documentation build configuration file, created by
 # sphinx-quickstart on Thu Feb  6 18:57:54 2014.
 #
@@ -21,6 +19,8 @@ allowed_failures = set()
 
 print("python exec:", sys.executable)
 print("sys.path:", sys.path)
+print("TEMPLATE version: ", TEMPLATE.__version__)
+
 
 # -- General configuration ------------------------------------------------
 
@@ -36,14 +36,11 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
     "sphinx.ext.mathjax",
-    #'numpydoc',
-    #'IPython.sphinxext.ipython_directive',
-    #'IPython.sphinxext.ipython_console_highlighting',
 ]
 
 extlinks = {
-    "issue": ("https://github.com/TODO/TEMPLATE/issues/%s", "GH"),
-    "pull": ("https://github.com/TODO/TEMPLATE/pull/%s", "PR"),
+    "issue": ("https://github.com/TODO/TEMPLATE/issues/%s", "#"),
+    "pull": ("https://github.com/TODO/TEMPLATE/pull/%s", "#"),
 }
 
 autosummary_generate = True
@@ -66,14 +63,14 @@ master_doc = "index"
 
 # General information about the project.
 project = "TEMPLATE"
-copyright = "2018-%s, TEMPLATE Developers" % datetime.datetime.now().year
+copyright = "2020-%s, TEMPLATE Developers" % datetime.datetime.now().year
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = TEMPLATE.version.short_version
+version = TEMPLATE.__version__.split("+")[0]
 # The full version, including alpha/beta/rc tags.
 release = TEMPLATE.__version__
 
