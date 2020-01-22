@@ -5,16 +5,7 @@ TEMPLATE: TODO description
 
    installing
    whats-new
-
-
-API Reference
--------------
-
-TODO your own documents here
-
-.. toctree::
-
-   api/helloworld
+   api
 
 
 License
