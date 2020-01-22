@@ -5,6 +5,11 @@ dependencies:
   - python=3.8
   - pytest
   - pytest-cov
+  # code linters and static checkers (running only in the latest version of Python)
+  - black
+  - flake8
+  - isort
+  - mypy
   # TODO: add your own dependencies (no version)
   # - dep1
   # - pip:
