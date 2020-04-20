@@ -32,3 +32,17 @@ Usage
 Credits
 -------
 Forked from https://github.com/pydata/xarray
+
+Badges
+------
+TODO replace crusaderky/python_project_template with <your user>/<project name>.
+You may want to move this section to the top of the page!
+
+![](https://github.com/crusaderky/python_project_template/workflows/doc/badge.svg)
+![](https://github.com/crusaderky/python_project_template/workflows/lint/badge.svg)
+![](https://github.com/crusaderky/python_project_template/workflows/pytest/badge.svg)
+![](https://github.com/crusaderky/python_project_template/workflows/pytest-minimal/badge.svg)
+![](https://codecov.io/gh/crusaderky/python_project_template/branch/master/graph/badge.svg)
+
+.. image:: https://codecov.io/gh/TODO/TEMPLATE/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/TODO/TEMPLATE
