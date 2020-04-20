@@ -47,7 +47,7 @@ jobs:
         run: py.test --verbose TEMPLATE --cov=TEMPLATE --cov-config ci/.coveragerc
              --cov-report term-missing
 
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Coveralls
+      #   uses: coverallsapp/github-action@master
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
