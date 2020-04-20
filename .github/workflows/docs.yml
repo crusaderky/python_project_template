@@ -1,10 +1,12 @@
-name: Documentation CI
+name: Documentation
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+  pull_request: {}
 
 jobs:
   build:
-    name: docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -1,10 +1,13 @@
-name: Documentation CI
+name: pytest
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+  pull_request: {}
 
 jobs:
   build:
-    name: Minimal ${{ matrix.os }}
+    name: minimal ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
