@@ -1,3 +1,2 @@
 [report]
 omit =
-    TEMPLATE/tests/*

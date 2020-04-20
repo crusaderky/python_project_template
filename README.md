@@ -8,8 +8,10 @@ github. It includes:
 - Automated tests with py.test
 - Enforced static code linting and validation with flake8, black, isort, and mypy
 - Sphinx documentation framework
-- Integration with readthedocs, Travis, and AppVeyor
-- CI tests against multiple versions of Python (Anaconda distribution)
+- Integration with github workflows, coveralls, and readthedocs
+- CI tests against multiple versions of Python (Anaconda distribution) and on multiple
+  OSs (Linux, Windows, and MacOS)
+- Explicit tests for minimum supported dependencies versions
 - Automated versioning with setuptools-scm
 - Step-by-step guide to release to pypi and conda-forge
 
