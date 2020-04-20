@@ -1,9 +1,11 @@
-name: pytest
+name: Test latest
 
 on:
   push:
     branches: [master]
-  pull_request: {}
+  pull_request:
+    branches: ['*']
+
 
 jobs:
   build:
@@ -29,10 +31,6 @@ jobs:
           activate-environment: TEMPLATE
           auto-activate-base: false
 
-      - name: Install
-        run: |
-          python -m pip install --no-deps -e .
-
       - name: conda info
         shell: bash -l {0}
         run: conda info
@@ -40,6 +38,10 @@ jobs:
       - name: conda list
         shell: bash -l {0}
         run: conda list
+
+      - name: Install
+        run: |
+          python -m pip install --no-deps -e .
 
       - name: pytest
         run: py.test --verbose TEMPLATE --cov=TEMPLATE --cov-config ci/.coveragerc
