@@ -44,7 +44,9 @@ jobs:
 
       - name: pytest
         shell: bash -l {0}
-        run: coverage run -m pytest -v
+        run: |
+          coverage run -m pytest -v
+          coverage xml
 
       - name: codecov.io
         uses: codecov/codecov-action@v1
