@@ -38,8 +38,8 @@ Badges
 TODO replace crusaderky/python_project_template with {github user}/{project name}.
 You may want to move this section to the top of the page!
 
-[![doc-badge](https://github.com/crusaderky/python_project_template/workflows/doc/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
-[![lint-badge](https://github.com/crusaderky/python_project_template/workflows/lint/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
-[![pytest-badge](https://github.com/crusaderky/python_project_template/workflows/pytest/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
-[![pytest-minimal-badge](https://github.com/crusaderky/python_project_template/workflows/pytest-minimal/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
+[![doc-badge](https://github.com/crusaderky/python_project_template/workflows/Documentation/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
+[![lint-badge](https://github.com/crusaderky/python_project_template/workflows/Lint/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
+[![pytest-badge](https://github.com/crusaderky/python_project_template/workflows/Test%20latest/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
+[![pytest-minimal-badge](https://github.com/crusaderky/python_project_template/workflows/Test%20minimal/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![codecov-badge](https://codecov.io/gh/crusaderky/python_project_template/branch/master/graph/badge.svg)](https://codecov.io/gh/crusaderky/python_project_template/branch/master)
