@@ -44,10 +44,10 @@ jobs:
 
       - name: pytest
         shell: bash -l {0}
-        run: py.test --verbose TEMPLATE --cov=TEMPLATE --cov-config ci/.coveragerc
-             --cov-report term-missing
+        run: coverage run -m pytest -v
 
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: coveralls
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash -l {0}
+        run: coveralls

@@ -3,8 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - coveralls
+  - coverage
   - pytest
-  - pytest-cov
   # TODO: add your own dependencies (no version)
   # - dep1
   # - pip:
