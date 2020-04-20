@@ -44,5 +44,5 @@ jobs:
 
       - uses: actions/upload-artifact@v1
         with:
-          name: doc
+          name: TEMPLATE-docs
           path: doc/_build/html
