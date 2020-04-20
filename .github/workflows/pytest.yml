@@ -46,8 +46,10 @@ jobs:
         shell: bash -l {0}
         run: coverage run -m pytest -v
 
-      - name: coveralls
+      - name: covecov.io
         env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: bash -l {0}
-        run: coveralls
+          # TODO:
+          # 1. acquire token from codecov.io
+          # 2. add token to https://github.com/<login>/<project>/settings/secrets/
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: bash <(curl -s https://codecov.io/bash)
