@@ -1,10 +1,10 @@
-name: test_env
+name: TEMPLATE-minimal
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - python=3.6
+  - coverage
   - pytest
-  - pytest-cov
   # TODO: add your own dependencies =minimum supported version
   # - dep1=1.0
   # - pip:

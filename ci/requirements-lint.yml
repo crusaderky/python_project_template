@@ -1,10 +1,12 @@
-name: test_env
+name: TEMPLATE-lint
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - python=3.6
-  - pytest
-  - pytest-cov
+  - black
+  - flake8
+  - isort
+  - mypy
   # TODO: add your own dependencies (no version)
   # - dep1
   # - pip:

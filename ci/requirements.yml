@@ -1,10 +1,10 @@
-name: test_env
+name: TEMPLATE
 channels:
   - conda-forge
+  - defaults
 dependencies:
-  - python=3.7
+  - coverage
   - pytest
-  - pytest-cov
   # TODO: add your own dependencies (no version)
   # - dep1
   # - pip:
