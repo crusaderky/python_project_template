@@ -46,10 +46,10 @@ jobs:
         shell: bash -l {0}
         run: coverage run -m pytest -v
 
-      - name: covecov.io
-        env:
+      - name: codecov.io
+        uses: codecov/codecov-action@v1
+        with:
           # TODO:
           # 1. acquire token from codecov.io
           # 2. add token to https://github.com/<login>/<project>/settings/secrets/
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: bash <(curl -s https://codecov.io/bash)
+          token: ${{ secrets.CODECOV_TOKEN }}
