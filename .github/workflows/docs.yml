@@ -41,3 +41,8 @@ jobs:
         run: |
           cd doc
           make html
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: doc
+          path: doc/_build/html
