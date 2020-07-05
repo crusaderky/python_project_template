@@ -7,6 +7,7 @@ TEMPLATE: TODO description
    whats-new
    api
    helloworld
+   sample
 
 
 License
