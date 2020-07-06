@@ -31,12 +31,15 @@ print("TEMPLATE version: ", TEMPLATE.__version__)
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "recommonmark",
+    "sphinx.ext.napoleon",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
     "sphinx.ext.mathjax",
 ]
+
 
 extlinks = {
     "issue": ("https://github.com/TODO/TEMPLATE/issues/%s", "#"),
@@ -49,7 +52,12 @@ autosummary_generate = True
 templates_path = ["_templates"]
 
 # The suffix of source filenames.
-source_suffix = ".rst"
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
+
 
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
@@ -114,6 +122,7 @@ pygments_style = "sphinx"
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = "sphinx_rtd_theme"
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -295,3 +304,4 @@ intersphinx_mapping = {
     # 'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
     # 'xarray': ('https://xarray.pydata.org/en/stable/', None),
 }
+
