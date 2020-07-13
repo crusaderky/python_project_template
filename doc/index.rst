@@ -8,6 +8,8 @@ TEMPLATE: TODO description
    api
    helloworld
    sample
+   sphinxcontrib.napoleon
+
 
 
 License

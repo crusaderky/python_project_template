@@ -32,8 +32,9 @@ print("TEMPLATE version: ", TEMPLATE.__version__)
 # ones.
 extensions = [
     "recommonmark",
-    "sphinx.ext.napoleon",
+    "sphinxcontrib.napoleon",
     "sphinx.ext.autodoc",
+    "sphinx.ext.coverage",
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
@@ -304,4 +305,53 @@ intersphinx_mapping = {
     # 'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
     # 'xarray': ('https://xarray.pydata.org/en/stable/', None),
 }
+
+# -- Options for Napoleon Extension --------------------------------------------
+
+# Parse Google style docstrings.
+# See http://google.github.io/styleguide/pyguide.html
+napoleon_google_docstring = False
+
+# Parse NumPy style docstrings.
+# See https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+napoleon_numpy_docstring = True
+
+# Should special members (like __membername__) and private members
+# (like _membername) members be included in the documentation if they
+# have docstrings.
+napoleon_include_private_with_doc = False
+napoleon_include_special_with_doc = True
+
+# If True, docstring sections will use the ".. admonition::" directive.
+# If False, docstring sections will use the ".. rubric::" directive.
+# One may look better than the other depending on what HTML theme is used.
+napoleon_use_admonition_for_examples = False
+napoleon_use_admonition_for_notes = False
+napoleon_use_admonition_for_references = False
+
+# If True, use Sphinx :ivar: directive for instance variables:
+#     :ivar attr1: Description of attr1.
+#     :type attr1: type
+# If False, use Sphinx .. attribute:: directive for instance variables:
+#     .. attribute:: attr1
+#
+#        Description of attr1.
+#
+#        :type: type
+napoleon_use_ivar = False
+
+# If True, use Sphinx :param: directive for function parameters:
+#     :param arg1: Description of arg1.
+#     :type arg1: type
+# If False, output function parameters using the :parameters: field:
+#     :parameters: **arg1** (*type*) -- Description of arg1.
+napoleon_use_param = True
+
+# If True, use Sphinx :rtype: directive for the return type:
+#     :returns: Description of return value.
+#     :rtype: type
+# If False, output the return type inline with the return description:
+#     :returns: *type* -- Description of return value.
+napoleon_use_rtype = True
+
 
