@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup
 
-
 if __name__ == "__main__":
     try:
         setup(use_scm_version=True)
