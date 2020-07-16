@@ -14,10 +14,11 @@ class Vehicles(object):
     -------
 
     """
+
     def __init__(self, arg, *args, **kwargs):
         self.arg = arg
 
-    def cars(self, distance,destination):
+    def cars(self, distance, destination):
         """We can't travel distance in vehicles without fuels, so here is the fuels
 
         Parameters
