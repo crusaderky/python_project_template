@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 # documentation build configuration file, created by
 # sphinx-quickstart on Thu Feb  6 18:57:54 2014.
 #
@@ -14,8 +16,6 @@ import os
 import sys
 
 import TEMPLATE
-
-allowed_failures = set()
 
 print("python exec:", sys.executable)
 print("sys.path:", sys.path)
@@ -205,13 +205,13 @@ htmlhelp_basename = "TEMPLATEdoc"
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
+latex_elements: dict[str, str] = {
     # The paper size ('letterpaper' or 'a4paper').
-    #'papersize': 'letterpaper',
+    # 'papersize': 'letterpaper',
     # The font size ('10pt', '11pt' or '12pt').
-    #'pointsize': '10pt',
+    # 'pointsize': '10pt',
     # Additional stuff for the LaTeX preamble.
-    #'preamble': '',
+    # 'preamble': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

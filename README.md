@@ -6,7 +6,8 @@ This project contains all the boilerplate for initialising a new Python project 
 github. It includes:
 
 - Automated tests with py.test
-- Enforced static code linting and validation with flake8, black, isort, and mypy
+- Enforced static code linting and validation with flake8, black, isort, and mypy,
+  encapsulated by pre-commit
 - Sphinx documentation framework
 - Integration with github workflows, codecov.io, and readthedocs
 - CI tests against multiple versions of Python (Anaconda distribution) and on multiple
@@ -39,7 +40,7 @@ TODO replace crusaderky/python_project_template with {github user}/{project name
 You may want to move this section to the top of the page!
 
 [![doc-badge](https://github.com/crusaderky/python_project_template/workflows/Documentation/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
-[![lint-badge](https://github.com/crusaderky/python_project_template/workflows/Lint/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
+[![pre-commit-badge](https://github.com/crusaderky/python_project_template/workflows/Pre-commit/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![pytest-badge](https://github.com/crusaderky/python_project_template/workflows/Test%20latest/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![pytest-minimal-badge](https://github.com/crusaderky/python_project_template/workflows/Test%20minimal/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![codecov-badge](https://codecov.io/gh/crusaderky/python_project_template/branch/master/graph/badge.svg)](https://codecov.io/gh/crusaderky/python_project_template/branch/master)
