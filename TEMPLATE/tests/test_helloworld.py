@@ -1,5 +1,6 @@
-# TODO
+from __future__ import annotations
 
+# TODO
 from TEMPLATE.helloworld import hello
 
 
