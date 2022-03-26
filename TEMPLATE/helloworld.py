@@ -1,9 +1,8 @@
-from __future__ import annotations
-
 """TODO
 
 A module that lets you say Hello world
 """
+from __future__ import annotations
 
 
 def hello(french: bool = False) -> str:
