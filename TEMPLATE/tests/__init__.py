@@ -22,9 +22,9 @@ def _import_or_skip(modname: str, minversion: str | None = None) -> tuple:
             Tests decorated with it will only run if the module is available
             and >= minversion
     """
-    reason = "requires %s" % modname
+    reason = f"requires {modname}"
     if minversion:
-        reason += ">=%s" % minversion
+        reason += f">={minversion}"
 
     try:
         version = importlib.metadata.version(modname)
