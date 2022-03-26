@@ -1,12 +1,12 @@
-import pkg_resources
+import importlib.metadata
 
 # Import implementation modules
-from .helloworld import hello
+from TEMPLATE.helloworld import hello
 
 try:
-    __version__ = pkg_resources.get_distribution("TEMPLATE").version
-except Exception:  # pragma: nocover
-    # Local copy, not installed with setuptools
+    __version__ = importlib.metadata.version("TEMPLATE")
+except importlib.metadata.PackageNotFoundError:  # pragma: nocover
+    # Local copy, not installed with pip
     __version__ = "999"
 
 

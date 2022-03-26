@@ -6,7 +6,7 @@ Required dependencies
 
 TODO add more requirements
 
-- Python 3.7 or later
+- Python 3.8 or later
 
 Installing with conda
 ---------------------
