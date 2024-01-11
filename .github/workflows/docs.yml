@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Conda Environment
         uses: conda-incubator/setup-miniconda@v2
@@ -44,7 +44,7 @@ jobs:
         shell: bash -l {0}
         run: sphinx-build -n -j auto -b html -d build/doctrees doc build/html
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v4
         with:
           name: TEMPLATE-docs
           path: build/html
