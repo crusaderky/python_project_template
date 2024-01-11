@@ -52,7 +52,6 @@ jobs:
         with:
           miniforge-variant: Mambaforge
           miniforge-version: latest
-          condarc-file: ci/condarc
           use-mamba: true
           python-version: ${{ matrix.python-version }}
           environment-file: ci/requirements-${{ matrix.requirements }}.yml

@@ -18,7 +18,6 @@ jobs:
         with:
           miniforge-variant: Mambaforge
           miniforge-version: latest
-          condarc-file: ci/condarc
           use-mamba: true
           python-version: 3.8
           environment-file: ci/requirements-docs.yml
