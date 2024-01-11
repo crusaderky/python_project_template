@@ -10,7 +10,8 @@ github. It includes:
   absolufy-imports and mypy, encapsulated by pre-commit
 - Sphinx documentation framework
 - Integration with github workflows, codecov.io, and readthedocs
-- CI tests against multiple versions of Python (Anaconda distribution) and on multiple
+- Cached conda environments
+- CI tests against multiple versions of Python and on multiple
   OSs (Linux, Windows, and MacOS)
 - Explicit tests for minimum supported dependencies versions
 - Automated versioning with setuptools-scm
