@@ -55,7 +55,7 @@ jobs:
         uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: ci/requirements-${{ matrix.requirements }}.yml
-          extra-specs: python=${{ matrix.python-version }}
+          create-args: python=${{ matrix.python-version }}
           cache-environment: true
 
       - name: Show conda options
