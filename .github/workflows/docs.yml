@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ['*']
 
+defaults:
+  run:
+    shell: bash -l {0}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,23 +29,18 @@ jobs:
           activate-environment: TEMPLATE-docs
 
       - name: Show conda options
-        shell: bash -l {0}
         run: conda config --show
 
       - name: conda info
-        shell: bash -l {0}
         run: conda info
 
       - name: conda list
-        shell: bash -l {0}
         run: conda list
 
       - name: Install
-        shell: bash -l {0}
         run: python -m pip install --no-deps -e .
 
       - name: Build docs
-        shell: bash -l {0}
         run: sphinx-build -n -j auto -b html -d build/doctrees doc build/html
 
       - uses: actions/upload-artifact@v4

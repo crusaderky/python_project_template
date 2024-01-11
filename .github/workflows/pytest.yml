@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ['*']
 
+defaults:
+  run:
+    shell: bash -l {0}
+
 jobs:
   build:
     name: ${{ matrix.os }} ${{ matrix.python-version }} ${{ matrix.requirements }}
@@ -59,23 +63,18 @@ jobs:
           activate-environment: TEMPLATE
 
       - name: Show conda options
-        shell: bash -l {0}
         run: conda config --show
 
       - name: conda info
-        shell: bash -l {0}
         run: conda info
 
       - name: conda list
-        shell: bash -l {0}
         run: conda list
 
       - name: Install
-        shell: bash -l {0}
         run: python -m pip install --no-deps -e .
 
       - name: pytest
-        shell: bash -l {0}
         run: py.test --verbose --cov=TEMPLATE --cov-report=xml
 
       - name: codecov.io
