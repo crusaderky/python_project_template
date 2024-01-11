@@ -43,4 +43,4 @@ You may want to move this section to the top of the page!
 [![pre-commit-badge](https://github.com/crusaderky/python_project_template/workflows/Linting/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![pytest-badge](https://github.com/crusaderky/python_project_template/workflows/Test%20latest/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![pytest-minimal-badge](https://github.com/crusaderky/python_project_template/workflows/Test%20minimal/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
-[![codecov-badge](https://codecov.io/gh/crusaderky/python_project_template/branch/master/graph/badge.svg)](https://codecov.io/gh/crusaderky/python_project_template/branch/master)
+[![codecov-badge](https://codecov.io/gh/crusaderky/python_project_template/branch/main/graph/badge.svg)](https://codecov.io/gh/crusaderky/python_project_template/branch/main)
