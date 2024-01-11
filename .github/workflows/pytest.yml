@@ -13,28 +13,33 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu, macos, windows]
-        python-version: ['3.8']
-        requirements: [latest, minimal]
+        os: [ubuntu]
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+        requirements: [latest]
         include:
-          - os: ubuntu
-            python-version: '3.9'
-            requirements: latest
-          - os: ubuntu
-            python-version: '3.10'
-            requirements: latest
-          - os: ubuntu
-            python-version: '3.11'
-            requirements: latest
-          - os: ubuntu
-            python-version: '3.12'
+          # Test on macos and windows (first and last version of python only)
+          - os: macos
+            python-version: '3.8'
             requirements: latest
           - os: macos
             python-version: '3.12'
             requirements: latest
           - os: windows
+            python-version: '3.8'
+            requirements: latest
+          - os: windows
             python-version: '3.12'
             requirements: latest
+          # Test on minimal requirements
+          - os: ubuntu
+            python-version: '3.8'
+            requirements: minimal
+          - os: macos
+            python-version: '3.8'
+            requirements: minimal
+          - os: windows
+            python-version: '3.8'
+            requirements: minimal
 
     steps:
       - name: Checkout
