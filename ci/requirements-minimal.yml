@@ -1,4 +1,4 @@
-name: TEMPLATE-minimal
+name: TEMPLATE
 channels:
   - conda-forge
   - defaults

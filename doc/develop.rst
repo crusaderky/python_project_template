@@ -14,7 +14,7 @@ Install
 2. Install anaconda or miniconda (OS-dependent)
 3. .. code-block:: bash
 
-     conda env create -n TEMPLATE-3.10 --file ci/requirements.yml python=3.10
+     conda env create -n TEMPLATE-3.10 --file ci/requirements-latest.yml python=3.10
      conda activate TEMPLATE-3.10
 
 To keep a fork in sync with the upstream source:
