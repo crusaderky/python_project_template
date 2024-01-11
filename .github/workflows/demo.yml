@@ -22,4 +22,4 @@ jobs:
       - uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: ci/requirements-latest.yml
-      - run: conda list
+      - run: mamba list
