@@ -21,5 +21,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: mamba-org/setup-micromamba@v1
         with:
+          init-shell: bash
           environment-file: ci/requirements-latest.yml
       - run: mamba list

@@ -54,6 +54,7 @@ jobs:
       - name: Setup Conda Environment
         uses: mamba-org/setup-micromamba@v1
         with:
+          init-shell: bash
           environment-file: ci/requirements-${{ matrix.requirements }}.yml
           create-args: python=${{ matrix.python-version }}
           cache-environment: true

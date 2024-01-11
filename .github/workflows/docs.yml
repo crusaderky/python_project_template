@@ -20,6 +20,7 @@ jobs:
       - name: Setup Conda Environment
         uses: mamba-org/setup-micromamba@v1
         with:
+          init-shell: bash
           environment-file: ci/requirements-docs.yml
           cache-environment: true
 
