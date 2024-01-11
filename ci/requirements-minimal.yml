@@ -3,10 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8
   - pytest
+  - pytest-cov
   - packaging
-  - coverage
 
   # TODO: add your own dependencies =minimum supported version
   # - dep1=1.0
