@@ -1,4 +1,4 @@
-name: Test latest
+name: Test
 
 on:
   push:
@@ -8,22 +8,38 @@ on:
 
 jobs:
   build:
-    name: ${{ matrix.python-version }} ${{ matrix.os }}
+    name: ${{ matrix.os }} ${{ matrix.python-version }} ${{ matrix.requirements }}
     runs-on: ${{ matrix.os }}-latest
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu]
         python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+        requirements: [latest]
         include:
+          # Test on macos and windows (first and last version of python only)
           - os: macos
             python-version: '3.8'
+            requirements: latest
           - os: macos
             python-version: '3.12'
+            requirements: latest
           - os: windows
             python-version: '3.8'
+            requirements: latest
           - os: windows
             python-version: '3.12'
+            requirements: latest
+          # Test on minimal requirements
+          - os: ubuntu
+            python-version: '3.8'
+            requirements: minimal
+          - os: macos
+            python-version: '3.8'
+            requirements: minimal
+          - os: windows
+            python-version: '3.8'
+            requirements: minimal
 
     steps:
       - name: Checkout
@@ -39,7 +55,7 @@ jobs:
           condarc-file: ci/condarc
           use-mamba: true
           python-version: ${{ matrix.python-version }}
-          environment-file: ci/requirements.yml
+          environment-file: ci/requirements-${{ matrix.requirements }}.yml
           activate-environment: TEMPLATE
 
       - name: Show conda options
