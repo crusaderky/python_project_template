@@ -41,9 +41,8 @@ Test using ``py.test``:
 Code Formatting
 ---------------
 
-TEMPLATE uses several code linters (flake8, black, isort, pyupgrade, mypy),
-which are enforced by CI. Developers should run them locally before they submit a PR,
-through the single command
+TEMPLATE uses several code linters (ruff, black, mypy), which are enforced by CI.
+Developers should run them locally before they submit a PR, through the single command
 
 .. code-block:: bash
 

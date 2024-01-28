@@ -6,8 +6,8 @@ This project contains all the boilerplate for initialising a new Python project 
 github. It includes:
 
 - Automated tests with py.test
-- Enforced static code linting and validation with flake8, black, isort,
-  absolufy-imports and mypy, encapsulated by pre-commit
+- Enforced static code linting and validation with ruff, black and mypy,
+  encapsulated by pre-commit
 - Sphinx documentation framework
 - Integration with github workflows, codecov.io, and readthedocs
 - CI tests against multiple versions of Python (Anaconda distribution) and on multiple
