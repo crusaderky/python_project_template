@@ -2,6 +2,7 @@
 
 A module that lets you say Hello world
 """
+
 from __future__ import annotations
 
 
@@ -17,5 +18,4 @@ def hello(french: bool = False) -> str:
     """
     if french:
         return "Bonjour, Monde!"
-    else:
-        return "Hello, World!"
+    return "Hello, World!"
