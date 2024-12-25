@@ -28,7 +28,7 @@ dynamic = ["version"]
 [project.urls]
 Homepage = "https://github.com/TODO/TEMPLATE"
 "Bug Tracker" = "https://github.com/TODO/TEMPLATE/issues"
-Changelog = "https://github.com/TODO/TEMPLATE/releases"
+Changelog = "https://TEMPLATE.readthedocs.io/en/latest/whats-new.html"
 
 [project.readme]
 text = "TODO"
