@@ -60,5 +60,6 @@ Time required: about an hour.
 14g.  The next day, test the conda-forge release
         conda search TEMPLATE
         conda create -n TEMPLATE-test TEMPLATE
+        conda activate TEMPLATE-test
         conda list
-        python -m 'import TEMPLATE'
+        python -c 'import TEMPLATE'
