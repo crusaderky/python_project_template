@@ -16,6 +16,9 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    # TODO adjust according to
+    # https://py-free-threading.github.io/porting/#define-and-document-thread-safety-guarantees
+    "Programming Language :: Python :: Free Threading :: 2 - Beta",
 ]
 requires-python = ">=3.10"
 dependencies = [
