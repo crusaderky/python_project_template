@@ -4844,8 +4844,8 @@ packages:
   timestamp: 1733569565672
 - pypi: ./
   name: template
-  version: 0.1.dev85+g732c3fe.d20250609
-  sha256: 9921338c0391c3be23612d48c552117d9031b96066428829903b18104b279076
+  version: 0.1.dev87+g93a10dc
+  sha256: c61b18d8f4917cb685a3e1f24a0a0592918781f6b71f6e2c2e0a7e8e0e5f0230
   requires_python: '>=3.10'
   editable: true
 - conda: https://prefix.dev/conda-forge/linux-64/tk-8.6.13-noxft_hd72426e_102.conda
