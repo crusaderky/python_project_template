@@ -11,13 +11,8 @@ Install
      git clone git@github.com:TODO/TEMPLATE.git
      cd TEMPLATE
 
-2. Install anaconda or miniconda (OS-dependent)
-3. .. code-block:: bash
-
-     conda env create -n TEMPLATE-3.10 --file ci/requirements-latest.yml python=3.10
-     conda activate TEMPLATE-3.10
-
-To keep a fork in sync with the upstream source:
+2. `Install pixi <https://pixi.sh/latest/#installation>`_
+3. To keep a fork in sync with the upstream source:
 
 .. code-block:: bash
 
@@ -32,21 +27,33 @@ To keep a fork in sync with the upstream source:
 Test
 ----
 
-Test using ``py.test``:
+Test using pixi:
 
 .. code-block:: bash
 
-   py.test TEMPLATE
+   pixi run tests
+
+Test with coverage:
+
+.. code-block:: bash
+
+   pixi run coverage
+
+Test with coverage and open HTML report in your browser:
+
+.. code-block:: bash
+
+   pixi run open-coverage
 
 Code Formatting
 ---------------
 
-TEMPLATE uses several code linters (ruff, black, mypy), which are enforced by CI.
+This project uses several code linters (ruff, black, mypy), which are enforced by CI.
 Developers should run them locally before they submit a PR, through the single command
 
 .. code-block:: bash
 
-    pre-commit run --all-files
+    pixi run lint
 
 This makes sure that linter versions and options are aligned for all developers.
 
@@ -55,8 +62,23 @@ run automatically when you make a git commit. This can be done by running:
 
 .. code-block:: bash
 
-   pre-commit install
+   pixi run pre-commit-install
 
-from the root of the TEMPLATE repository. Now the code linters will be run each time
-you commit changes. You can skip these checks with ``git commit --no-verify`` or with
+Now the code linters will be run each time you commit changes.
+You can skip these checks with ``git commit --no-verify`` or with
 the short version ``git commit -n``.
+
+Documentation
+-------------
+
+Build the documentation in ``build/html`` using pixi:
+
+.. code-block:: bash
+
+    pixi run docs
+
+Build the documentation and open it in your browser:
+
+.. code-block:: bash
+
+    pixi run open-docs
