@@ -5,14 +5,16 @@ TODO
 This project contains all the boilerplate for initialising a new Python project
 on github. It includes:
 
-- Automated tests with py.test
+- Package management with pixi
+- Automated tests with pytest
 - Enforced static code linting and validation with ruff, black and mypy,
-  encapsulated by pre-commit
+  automated by pre-commit
 - Sphinx documentation framework
 - Integration with github workflows, codecov.io, and readthedocs
-- CI tests against multiple versions of Python (Anaconda distribution) and on
-  multiple OSs (Linux, Windows, and MacOS)
+- CI tests against multiple versions of Python, multiple OSs (Linux, Windows,
+  and MacOS) and architectures (x86 and ARM).
 - Explicit tests for minimum supported dependencies versions
+- Stress tests for free-threading (noGIL)
 - Automated versioning with setuptools-scm
 - Step-by-step guide to release to pypi and conda-forge
 
@@ -38,5 +40,6 @@ name}. You may want to move this section to the top of the page!
 
 [![doc-badge](https://github.com/crusaderky/python_project_template/actions/workflows/docs.yml/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![pre-commit-badge](https://github.com/crusaderky/python_project_template/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
+[![wheels-badge](https://github.com/crusaderky/python_project_template/actions/workflows/wheels.yml/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![pytest-badge](https://github.com/crusaderky/python_project_template/actions/workflows/pytest.yml/badge.svg)](https://github.com/crusaderky/python_project_template/actions)
 [![codecov-badge](https://codecov.io/gh/crusaderky/python_project_template/branch/main/graph/badge.svg)](https://codecov.io/gh/crusaderky/python_project_template/branch/main)

@@ -4,10 +4,9 @@ TEMPLATE: TODO description
 .. toctree::
 
    installing
+   api
    develop
    whats-new
-   api
-
 
 License
 -------
