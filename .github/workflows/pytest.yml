@@ -44,13 +44,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: prefix-dev/setup-pixi@v0.8.8
+      - uses: prefix-dev/setup-pixi@v0.8.10
         with:
-          pixi-version: v0.47.0
+          pixi-version: v0.48.1
           cache: true
           environments: ${{ matrix.environment }}
 
       - name: pytest with coverage
+        if: matrix.environment != 'nogil'
         run: pixi run -e ${{ matrix.environment }} coverage
 
       - name: Free-threading stress test
@@ -58,5 +59,5 @@ jobs:
         run: pixi run -e nogil pytest --parallel-threads=4
 
       - name: codecov.io
-        if: matrix.os != 'macos-13'
+        if: matrix.os != 'macos-13' && matrix.environment != 'nogil'
         uses: codecov/codecov-action@v5
