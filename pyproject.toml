@@ -77,7 +77,6 @@ filterwarnings = ["error"]
 [tool.coverage.report]
 show_missing = true
 
-
 [tool.ruff]
 exclude = [".eggs"]
 target-version = "py310"
@@ -219,6 +218,15 @@ twine-check = { cmd = "python -m twine check dist/*" }
 dist = { depends-on = ["dist-clear", "sdist", "wheel", "twine-check"] }
 twine-upload = { depends-on = ["dist"], cmd = "python -m twine upload dist/*" }
 
+[tool.pixi.feature.upstream.pypi-dependencies]
+# TODO python 3.14 prereleases?
+# TODO uncomment relevant dependencies
+# numpy = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# pandas = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# scipy = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# xarray = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# dask = { git = "https://github.com/dask/dask.git" }
+
 [tool.pixi.environments]
 # FIXME use same solve-groups with and without numba
 default = { features = ["py313", "docs", "tests", "ipython"], solve-group = "py313" }
@@ -229,3 +237,4 @@ mindeps = { features = ["mindeps", "tests"], solve-group = "mindeps" }
 py310 = { features = ["py310", "tests"] }
 py313 = { features = ["py313", "tests"], solve-group = "py313" }
 nogil = { features = ["nogil", "tests"] }
+upstream = { features = ["py313", "upstream", "tests"], no-default-feature = true }

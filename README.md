@@ -13,6 +13,7 @@ on github. It includes:
 - Integration with github workflows, codecov.io, and readthedocs
 - CI tests against multiple versions of Python, multiple OSs (Linux, Windows,
   and MacOS) and architectures (x86 and ARM).
+- CI tests against nightly pre-releases of dependencies
 - Explicit tests for minimum supported dependencies versions
 - Stress tests for free-threading (noGIL)
 - Automated versioning with setuptools-scm
