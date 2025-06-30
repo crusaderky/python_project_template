@@ -182,8 +182,7 @@ sphinx = "*"
 sphinx_rtd_theme = "*"
 
 [tool.pixi.feature.docs.tasks]
-install-for-docs = { cmd = "python -m pip install ." }
-docs = { cmd = "sphinx-build -n -j auto -b html -d ../build/doctrees . ../build/html", cwd = "doc", depends-on = ["install-for-docs"], description = "Build docs"}
+docs = { cmd = "sphinx-build -n -j auto -b html -d ../build/doctrees . ../build/html",  env={ PYTHONPATH = "$PIXI_PROJECT_ROOT" }, cwd = "doc", description = "Build docs"}
 open-docs = { cmd = "open build/html/index.html", depends-on = ["docs"], description = "Open the generated docs"}
 
 [tool.pixi.feature.ipython.dependencies]
