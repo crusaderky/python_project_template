@@ -29,9 +29,9 @@ def _import_or_skip(modname: str, minversion: str | None = None) -> tuple:
     try:
         version = importlib.metadata.version(modname)
         has = True  # pragma: nocover
+        if minversion and parse_version(version) < parse_version(minversion):
+            has = False  # pragma: nocover
     except importlib.metadata.PackageNotFoundError:
-        has = False  # pragma: nocover
-    if has and minversion and parse_version(version) < parse_version(minversion):
         has = False  # pragma: nocover
 
     func = pytest.mark.skipif(not has, reason=reason)
