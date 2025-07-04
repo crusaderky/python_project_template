@@ -43,8 +43,8 @@ content-type = "text/plain"
 zip-safe = false # https://mypy.readthedocs.io/en/latest/installed_packages.html
 include-package-data = true
 
-[tool.setuptools.packages.find]
-where = ["TEMPLATE"]
+[tool.setuptools.packages]
+find = { namespaces = false }
 
 [tool.setuptools_scm]
 # Use hardcoded version when .git has been removed and this is not a package created
@@ -217,6 +217,15 @@ pytest-run-parallel = "*"
 python = "=3.11"
 # TODO repeat dependencies here, but use = instead of >=
 
+[tool.pixi.feature.upstream.pypi-dependencies]
+# TODO python 3.14 prereleases?
+# TODO uncomment relevant dependencies
+# numpy = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# pandas = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# scipy = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# xarray = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
+# dask = { git = "https://github.com/dask/dask.git" }
+
 [tool.pixi.feature.dist.dependencies]
 python-build = "*"
 twine = "*"
@@ -228,22 +237,13 @@ twine-check = { cmd = "python -m twine check dist/*" }
 dist = { depends-on = ["dist-clear", "build", "twine-check"] }
 twine-upload = { depends-on = ["dist"], cmd = "python -m twine upload dist/*" }
 
-[tool.pixi.feature.upstream.pypi-dependencies]
-# TODO python 3.14 prereleases?
-# TODO uncomment relevant dependencies
-# numpy = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
-# pandas = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
-# scipy = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
-# xarray = { index = "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple" }
-# dask = { git = "https://github.com/dask/dask.git" }
-
 [tool.pixi.environments]
 # FIXME use same solve-groups with and without numba
 default = { features = ["py313", "docs", "tests", "ipython"], solve-group = "py313" }
 dist = { features = ["dist"], no-default-feature = true }
 lint = { features = ["lint"], no-default-feature = true }
 docs = { features = ["py313", "docs"], solve-group = "py313" }
-mindeps = { features = ["mindeps", "tests"], solve-group = "mindeps" }
+mindeps = { features = ["mindeps", "tests"] }
 py311 = { features = ["py311", "tests"] }
 py313 = { features = ["py313", "tests"], solve-group = "py313" }
 nogil = { features = ["nogil", "tests"] }
