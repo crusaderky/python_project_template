@@ -298,10 +298,10 @@ texinfo_documents = [
 intersphinx_mapping = {
     # TODO add/remove project dependencies
     "python": ("https://docs.python.org/3/", None),
-    # 'dask': ('https://docs.dask.org/en/latest/', None),
-    # 'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
-    # 'numpy': ('https://docs.scipy.org/doc/numpy/', None),
-    # 'numba': ('https://numba.pydata.org/numba-doc/latest/', None),
-    # 'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
-    # 'xarray': ('https://xarray.pydata.org/en/stable/', None),
+    "dask": ("https://docs.dask.org/en/latest/", None),
+    "pandas": ("https://pandas.pydata.org/pandas-docs/stable/", None),
+    "numpy": ("https://docs.scipy.org/doc/numpy/", None),
+    "numba": ("https://numba.pydata.org/numba-doc/latest/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
+    "xarray": ("https://xarray.pydata.org/en/stable/", None),
 }
