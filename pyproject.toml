@@ -157,8 +157,9 @@ channels = ["https://prefix.dev/conda-forge"]
 platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64", "win-64"]
 
 [tool.pixi.dependencies]
-python = ">=3.11"
+python = "*"
 # TODO repeat dependencies here
+# No need to repeat minimum version; = "*" is enough
 
 [tool.pixi.feature.lint.dependencies]
 lefthook = "*"
@@ -253,3 +254,4 @@ py311 = { features = ["py311", "smoke", "tests"] }
 py313 = { features = ["py313", "smoke", "tests"], solve-group = "py313" }
 nogil = { features = ["nogil", "smoke", "tests"], no-default-feature = true }
 upstream = { features = ["upstream", "smoke", "tests"], no-default-feature = true }
+smoke = { features = ["smoke"] }
