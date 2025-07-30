@@ -3,7 +3,7 @@ from __future__ import annotations
 import importlib.metadata
 
 import pytest
-from packaging.version import parse as parse_version
+from packaging import version
 
 
 def _import_or_skip(modname: str, minversion: str | None = None) -> tuple:
@@ -24,15 +24,17 @@ def _import_or_skip(modname: str, minversion: str | None = None) -> tuple:
     """
     reason = f"requires {modname}"
     if minversion:
-        reason += f">={minversion}"  # pragma: nocover
+        reason += f">={minversion}"
 
+    has = True
     try:
-        version = importlib.metadata.version(modname)
-        has = True  # pragma: nocover
-        if minversion and parse_version(version) < parse_version(minversion):
+        pkg_version = importlib.metadata.version(modname)
+        if minversion and version.parse(pkg_version) < version.parse(
+            minversion
+        ):  # pragma: nocover
             has = False  # pragma: nocover
     except importlib.metadata.PackageNotFoundError:
-        has = False  # pragma: nocover
+        has = False
 
     func = pytest.mark.skipif(not has, reason=reason)
     return has, func
