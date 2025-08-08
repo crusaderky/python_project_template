@@ -31,9 +31,10 @@ dynamic = ["version"]
 # some_label = ["dependency1", "dependency2"]
 
 [project.urls]
-Homepage = "https://github.com/TODO/TEMPLATE"
-"Bug Tracker" = "https://github.com/TODO/TEMPLATE/issues"
-Changelog = "https://TEMPLATE.readthedocs.io/en/latest/whats-new.html"
+homepage = "https://github.com/TODO/TEMPLATE"
+issues = "https://github.com/TODO/TEMPLATE/issues"
+documentation = "https://TEMPLATE.readthedocs.io/"
+changelog = "https://TEMPLATE.readthedocs.io/en/latest/whats-new.html"
 
 [project.readme]
 text = "TODO"
@@ -239,9 +240,9 @@ twine = "*"
 [tool.pixi.feature.dist.tasks]
 dist-clear = { cmd = "rm -rf build dist" }
 build = { cmd = "python -m build", description = "Build pypi artifacts" }
-twine-check = { cmd = "python -m twine check dist/*" }
 dist = { depends-on = ["dist-clear", "build", "twine-check"] }
-twine-upload = { depends-on = ["dist"], cmd = "python -m twine upload dist/*" }
+twine-check = { cmd = "python -m twine check dist/*" }
+twine-upload = { cmd = "python -m twine upload dist/*" }
 
 [tool.pixi.environments]
 # FIXME use same solve-groups with and without numba
