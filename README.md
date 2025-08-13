@@ -19,7 +19,7 @@ on github. It includes:
 - Automated versioning with setuptools-scm
 - Step-by-step guide to release to pypi and conda-forge
 
-Full documentation at http://python_project_template.readthedocs.io/
+Full documentation at http://python-project-template.readthedocs.io/
 
 ## Usage
 
