@@ -303,5 +303,5 @@ intersphinx_mapping = {
     "numpy": ("https://docs.scipy.org/doc/numpy/", None),
     "numba": ("https://numba.pydata.org/numba-doc/latest/", None),
     "scipy": ("https://docs.scipy.org/doc/scipy/reference/", None),
-    "xarray": ("https://xarray.pydata.org/en/stable/", None),
+    "xarray": ("https://docs.xarray.dev/en/stable/", None),
 }
