@@ -94,7 +94,6 @@ ignore = [
   "N803", # Argument name should be lowercase
   "N806", # Variable should be lowercase
   "N816", # Variable in global scope should not be mixedCase
-  "PD901", # Avoid using the generic variable name `df` for DataFrames
   "PT006", # Wrong type passed to first argument of `pytest.mark.parametrize`; expected `tuple`
   "PLC0414", # Import alias does not rename original package
   "PLR0912", # Too many branches
