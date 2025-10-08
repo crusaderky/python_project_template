@@ -16,7 +16,7 @@ on github. It includes:
 - CI tests against nightly pre-releases of dependencies
 - Explicit tests for minimum supported dependencies versions
 - Stress tests for free-threading (noGIL)
-- Automated versioning with setuptools-scm
+- Automated versioning with hatchling
 - Step-by-step guide to release to pypi and conda-forge
 
 Full documentation at http://python-project-template.readthedocs.io/
