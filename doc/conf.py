@@ -37,8 +37,8 @@ extensions = [
 ]
 
 extlinks = {
-    "issue": ("https://github.com/TODO/TEMPLATE/issues/%s", "#"),
-    "pull": ("https://github.com/TODO/TEMPLATE/pull/%s", "#"),
+    "issue": ("https://github.com/TODO/TEMPLATE/issues/%s", "#%s"),
+    "pull": ("https://github.com/TODO/TEMPLATE/pull/%s", "#%s"),
 }
 
 autosummary_generate = True
