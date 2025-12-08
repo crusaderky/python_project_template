@@ -208,6 +208,7 @@ python = "=3.11"
 
 [tool.pixi.feature.upstream.dependencies]
 python = "=3.14"
+# TODO repeat here all default dependencies that are not from nightly wheels / git tip
 
 [tool.pixi.feature.upstream.pypi-dependencies]
 # TODO uncomment relevant dependencies
@@ -237,6 +238,6 @@ docs = { features = ["py314", "docs"], solve-group = "py314" }
 mindeps = { features = ["mindeps", "smoke", "tests"] }
 py311 = { features = ["py311", "smoke", "tests"] }
 py314 = { features = ["py314", "smoke", "tests"], solve-group = "py314" }
-nogil = { features = ["nogil", "smoke", "tests"], no-default-feature = true }
+nogil = { features = ["nogil", "smoke", "tests"] }
 upstream = { features = ["upstream", "smoke", "tests"], no-default-feature = true }
 smoke = { features = ["smoke"] }
