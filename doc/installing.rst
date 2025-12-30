@@ -14,7 +14,7 @@ Installing with conda
 
 .. code-block:: bash
 
-    conda install TEMPLATE
+    conda install -c conda-forge TEMPLATE
 
 
 Installing with pip
