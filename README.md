@@ -27,8 +27,9 @@ Full documentation at http://python-project-template.readthedocs.io/
 2. Replace all TEMPLATE tags with your project name (also in file and directory
    names)
 3. Search for all TODO tags and replace them as needed
-4. Integrate with readthedocs, Travis, and AppVeyor and obtain successful builds
-5. Replace the TEMPLATE directory with your own python files and tests.
+4. Replace the TEMPLATE directory with your own python files and tests.
+5. Integrate with readthedocs
+6. Obtain successful builds in CI
 
 ## Credits
 
