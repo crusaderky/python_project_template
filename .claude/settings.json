@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pixi run *)",
+      "Bash(gh run download *)",
+      "Bash(gh run list *)",
+      "Bash(gh run view *)",
+      "WebFetch(domain:github.com)"
+    ],
+    "deny": ["Bash(git push *)", "Bash(pixi run *twine*)"]
+  }
+}

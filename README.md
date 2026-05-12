@@ -18,6 +18,7 @@ on github. It includes:
 - Stress tests for free-threading (noGIL)
 - Automated versioning with hatchling
 - Step-by-step guide to release to pypi and conda-forge
+- Sane initial setup for Claude and other coding agents
 
 Full documentation at http://python-project-template.readthedocs.io/
 
