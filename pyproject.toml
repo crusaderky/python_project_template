@@ -164,6 +164,7 @@ sphinx-lint = "*"
 
 [tool.pixi.feature.lint.tasks]
 install-git-hooks = { cmd = "lefthook install", description = "Install pre-commit hooks" }
+update-dprint = { cmd = "dprint config update", description = "Update dprint plugins" }
 lint = { cmd = "lefthook run pre-commit --all-files --force", description = "Run all linters" }
 
 [tool.pixi.feature.smoke.tasks]
